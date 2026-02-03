@@ -101,7 +101,8 @@ mini-ecommerce/
 CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 ```
 
@@ -114,7 +115,9 @@ CREATE TABLE products (
     name VARCHAR(150) NOT NULL,
     price DECIMAL(10,2) NOT NULL,
     image VARCHAR(255),
+    description TEXT DEFAULT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (category_id) REFERENCES categories(id)
 );
 ```
@@ -131,6 +134,7 @@ return [
     'dbname' => 'mini_ecommerce',
     'user'   => 'root',
     'pass'   => '',
+    'charset' => 'utf8mb4',
 ];
 ```
 
