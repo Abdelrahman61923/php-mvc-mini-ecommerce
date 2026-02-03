@@ -19,6 +19,11 @@ class Category
             "SELECT * FROM categories ORDER BY created_at DESC");
     }
 
+    public function count()
+    {
+        return $this->db->fetchColumn("SELECT COUNT(*) FROM categories");
+    }
+
     public function filter($search, $limit, $offset)
     {
         $sql = "SELECT * FROM categories WHERE 1";

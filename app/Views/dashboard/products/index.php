@@ -78,7 +78,7 @@
                                         <th>Category Name</th>
                                         <th>price</th>
                                         <th>Description</th>
-                                        <th>Date</th>
+                                        <th>Created At</th>
                                         <th class="text-end">Actions</th>
                                     </tr>
                                 </thead>

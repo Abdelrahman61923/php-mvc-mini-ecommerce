@@ -63,7 +63,7 @@
                                     <tr>
                                         <th>ID</th>
                                         <th>Name</th>
-                                        <th>Date</th>
+                                        <th>Created At</th>
                                         <th class="text-end">Actions</th>
                                     </tr>
                                 </thead>

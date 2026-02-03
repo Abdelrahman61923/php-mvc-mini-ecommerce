@@ -19,7 +19,7 @@
                 </li>
                 <li class="nxl-item nxl-hasmenu">
                     <a href="/php/mini-ecommerce/public/dashboard/categories" class="nxl-link">
-                        <span class="nxl-micon"><i class="feather-cast"></i></span>
+                        <span class="nxl-micon"><i class="feather-briefcase"></i></span>
                         <span class="nxl-mtext">Categories</span>
                     </a>
                 </li>

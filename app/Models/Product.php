@@ -13,6 +13,11 @@ class Product
         $this->db = new Database();
     }
 
+    public function count()
+    {
+        return $this->db->fetchColumn("SELECT COUNT(*) FROM products");
+    }
+
     public function filter($search, $category, $limit, $offset)
     {
         $sql = "
