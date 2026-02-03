@@ -30,15 +30,15 @@ A mini e-commerce system built using **Core PHP** with a **custom MVC architectu
 
 **Login Page**
 
-![Login](screenshots/login.png)
+![Login](public/assets/images/screenshots/login.png)
 
 **Dashboard**
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](public/assets/images/screenshots/dashboard.png)
 
 **Products Management**
 
-![Products](screenshots/products.png)
+![Products](public/assets/images/screenshots/products.png)
 
 ---
 
