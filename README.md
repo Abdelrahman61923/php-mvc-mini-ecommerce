@@ -95,11 +95,24 @@ mini-ecommerce/
 
 ## 🗄️ Database Structure
 
+### Users Table
+
+```sql
+CREATE TABLE users (
+    id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name varchar(100) NOT NULL,
+    email varchar(150) NOT NULL UNIQUE,
+    password varchar(255) NOT NULL,
+    created_at timestamp NOT NULL DEFAULT current_timestamp(),
+    updated_at timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+);
+```
+
 ### Categories Table
 
 ```sql
 CREATE TABLE categories (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
@@ -110,7 +123,7 @@ CREATE TABLE categories (
 
 ```sql
 CREATE TABLE products (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     category_id INT,
     name VARCHAR(150) NOT NULL,
     price DECIMAL(10,2) NOT NULL,
