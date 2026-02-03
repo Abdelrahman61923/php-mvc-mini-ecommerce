@@ -26,8 +26,6 @@ A mini e-commerce system built using **Core PHP** with a **custom MVC architectu
 
 ## 📸 Screenshots
 
-> Add screenshots by placing images inside a `/screenshots` folder at the project root, then reference them below.
-
 **Login Page**
 
 ![Login](public/assets/images/screenshots/login.png)
