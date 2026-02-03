@@ -237,7 +237,7 @@ git clone https://github.com/your-username/php-mvc-mini-ecommerce.git
 2. Move project to:
 
 ```
-xampp/htdocs/
+xampp/htdocs/php
 ```
 
 3. Create database:
